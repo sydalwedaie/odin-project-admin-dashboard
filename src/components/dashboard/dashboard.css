@@ -1,0 +1,27 @@
+.dashboard {
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: 170px auto;
+  grid-template-columns: minmax(max-content, 1fr) 4fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+
+.dashboard__item {
+}
+
+.dashboard__sidebar {
+  grid-area: sidebar;
+  background-color: lightblue;
+}
+
+.dashboard__header {
+  grid-area: header;
+  background-color: pink;
+}
+
+.dashboard__main {
+  grid-area: main;
+  background-color: lightgray;
+}
