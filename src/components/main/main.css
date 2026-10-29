@@ -1,0 +1,27 @@
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+  gap: 1rem;
+  padding: 1rem;
+  height: 100%;
+}
+
+.main__item {
+  background-color: whitesmoke;
+}
+
+.main__projects {
+  grid-area: projects;
+}
+
+.main__announcements {
+  grid-area: announcements;
+}
+
+.main__trending {
+  grid-area: trending;
+}
