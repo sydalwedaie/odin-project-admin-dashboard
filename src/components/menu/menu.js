@@ -1,30 +1,43 @@
 import "./menu.css";
-const context = import.meta.webpackContext("./icons");
 
-export function Menu(list) {
+export function MenuOne() {
+  const list = [
+    "Home",
+    "Profile",
+    "Messages",
+    "History",
+    "Tasks",
+    "Communities",
+  ];
+  return Menu(list);
+}
+
+export function MenuTwo() {
+  const list = ["Settings", "Support", "Privacy"];
+  return Menu(list);
+}
+
+function Menu(list) {
+  const iconsContext = import.meta.webpackContext("./icons");
   const html = String.raw;
 
-  const getMenuLinkMarkup = (icon, text) => {
+  const getItemMarkup = (itemText) => {
+    const icon = iconsContext(`./${itemText.toLowerCase()}.svg`);
     return html`
-      <a class="menu__link" href="#">
-        <div class="menu__icon-wrapper">
-          <img class="menu__icon" src="${icon}" alt="${text} icon" />
-        </div>
-        <div class="menu__text">${text}</div>
-      </a>
+      <li class="menu__item">
+        <a class="menu__link" href="#">
+          <div class="menu__icon-wrapper">
+            <img class="menu__icon" src="${icon}" alt="${itemText} icon" />
+          </div>
+          <div class="menu__text">${itemText}</div>
+        </a>
+      </li>
     `;
   };
 
-  const menuItemsMarkup = list
-    .map((item) => {
-      const icon = context(`./${item.toLowerCase()}.svg`);
-      return html`<li class="menu__item">${getMenuLinkMarkup(icon, item)}</li>`;
-    })
-    .join("");
-
   const markup = html`
     <ul class="menu">
-      ${menuItemsMarkup}
+      ${list.map(getItemMarkup).join("")}
     </ul>
   `;
 
