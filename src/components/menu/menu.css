@@ -1,0 +1,29 @@
+.menu {
+  display: grid;
+  gap: 1rem;
+}
+
+.menu__item {
+  padding-inline: 0.5rem;
+}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-fg-inverted);
+}
+
+.menu__icon-wrapper {
+  width: 1.5rem;
+  background-color: var(--color-primary);
+}
+
+.menu__icon {
+  filter: invert(1);
+}
+
+.menu__text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

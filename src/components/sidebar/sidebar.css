@@ -1,10 +1,9 @@
 .sidebar {
   display: grid;
   align-content: start;
-  gap: 2rem;
+  gap: 3rem;
   height: 100%;
   padding: var(--spacing-1);
 
   background-color: var(--color-primary);
-  color: var(--color-fg-inverted);
 }
