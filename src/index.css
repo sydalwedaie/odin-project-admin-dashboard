@@ -20,4 +20,10 @@ html {
   --spacing-1: 2rem;
 }
 
+body {
+  background-color: lightyellow;
+  min-height: 100dvh;
+  max-width: 1600px;
+  margin: auto;
+  display: grid;
 }

@@ -1,8 +1,7 @@
 .dashboard {
-  height: 100dvh;
   display: grid;
   grid-template-rows: 170px auto;
-  grid-template-columns: minmax(max-content, 1fr) 4fr;
+  grid-template-columns: minmax(max-content, 1fr) 5fr;
   grid-template-areas:
     "sidebar header"
     "sidebar main";
