@@ -17,5 +17,7 @@ html {
   --color-fg: var(--black);
   --color-fg-inverted: var(--white);
 
-  --spacing-1: clamp(1rem, calc(1rem + 1vw), 2rem);
+  --spacing-1: 2rem;
+}
+
 }
