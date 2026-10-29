@@ -1,2 +1,21 @@
 @import "./assets/modern-normalize.css";
 @import "./assets/reset.css";
+
+:root:not(.dark) {
+  --blue: #1992d4;
+  --white: ghostwhite;
+  --yellow: #e4b549;
+  --grey: #e3e7f0;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+html {
+  --color-primary: var(--blue);
+  --color-accent: var(--yellow);
+  --color-bg: var(--grey);
+  --color-fg: var(--black);
+  --color-fg-inverted: var(--white);
+
+  --spacing-1: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
