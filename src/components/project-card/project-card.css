@@ -1,0 +1,13 @@
+.project-card__actions {
+  text-align: right;
+}
+
+.project-card__action-btn {
+  border: none;
+  background: none;
+}
+
+.project-card__action-icon {
+  width: 1.5rem;
+  filter: invert(0.3);
+}
