@@ -1,3 +1,4 @@
+import { Trending } from "../trending/trending.js";
 import "./main.css";
 
 export function Main() {
@@ -6,7 +7,7 @@ export function Main() {
     <main class="main">
       <div class="main__item main__projects">Your Projects</div>
       <div class="main__item main__announcements">Announcements</div>
-      <div class="main__item main__trending">Trending</div>
+      <div class="main__item main__trending">${Trending()}</div>
     </main>
   `;
   return markup;
