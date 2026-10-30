@@ -33,7 +33,7 @@ export function Trending() {
   const markup = html`
     <div class="trending">
       <h1 class="trending__header heading heading--1">Trending</h1>
-      <div class="trending__body">
+      <div class="trending__body card">
         ${list.map((item) => getItemMarkup(item)).join("")}
       </div>
     </div>
