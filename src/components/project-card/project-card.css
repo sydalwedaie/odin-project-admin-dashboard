@@ -1,4 +1,9 @@
+.project-card__body {
+  display: grid;
+  gap: var(--spacing-0);
+}
 .project-card__actions {
+  align-self: end;
   text-align: right;
 }
 
