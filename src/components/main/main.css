@@ -1,16 +1,13 @@
 .main {
+  background-color: var(--color-bg-alternate);
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 5fr 2fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "projects announcements"
     "projects trending";
-  gap: 1rem;
-  padding: 1rem;
-  height: 100%;
-}
-
-.main__item {
+  gap: var(--spacing-2);
+  padding: var(--spacing-2);
 }
 
 .main__projects {

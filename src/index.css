@@ -33,10 +33,7 @@ html {
 
 body {
   background-color: lightyellow;
-  min-height: 100dvh;
-  max-width: 1600px;
-  margin: auto;
-  display: grid;
+  max-height: 100dvh;
 }
 
 /* typography */

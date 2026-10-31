@@ -1,0 +1,10 @@
+.projects {
+  display: grid;
+  gap: var(--spacing-1);
+}
+
+.projects__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-2);
+}
