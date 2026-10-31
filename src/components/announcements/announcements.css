@@ -3,13 +3,18 @@
   gap: var(--spacing-1);
 }
 
-.announcements__body {
-}
-
 .announcements__item {
   padding: var(--spacing-1);
   display: grid;
   gap: var(--spacing-0);
+}
+
+.announcements__msg {
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .announcements__divider {
