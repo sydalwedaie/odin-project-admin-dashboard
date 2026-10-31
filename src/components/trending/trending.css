@@ -15,7 +15,6 @@
 .trending__user-avatar-wrapper {
   width: 4rem;
   grid-area: avatar;
-  justify-self: center;
   background-color: var(--color-primary);
   border-radius: 50%;
   overflow: hidden;
