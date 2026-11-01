@@ -34,8 +34,7 @@ html {
 }
 
 body {
-  background-color: lightyellow;
-  /* max-height: 100dvh; */
+  background-color: var(--color-bg-alternate);
 }
 
 /* typography blocks */
