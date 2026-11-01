@@ -1,13 +1,11 @@
 .dashboard {
   display: grid;
-  grid-template-rows: 170px auto;
   grid-template-columns: minmax(max-content, 1fr) 5fr;
   grid-template-areas:
     "sidebar header"
     "sidebar main";
-}
-
-.dashboard__item {
+  height: 100vh;
+  height: 100dvh;
 }
 
 .dashboard__sidebar {
@@ -21,6 +19,5 @@
 
 .dashboard__main {
   grid-area: main;
-  height: calc(100vh - 170px);
   overflow: scroll;
 }

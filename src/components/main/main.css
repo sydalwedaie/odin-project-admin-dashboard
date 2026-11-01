@@ -4,6 +4,7 @@
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: var(--spacing-2);
   padding: var(--spacing-2);
+  min-height: 100%; /* fill the main container even if too short */
 }
 
 .main__body {
