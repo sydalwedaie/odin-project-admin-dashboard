@@ -1,20 +1,42 @@
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "search profile"
+    "greeting actions";
   align-items: center;
   gap: var(--spacing-1);
   background-color: var(--color-bg-primary);
   box-shadow: var(--box-shadow);
   position: relative; /* needed for box shadow! */
   padding: var(--spacing-1) var(--spacing-3);
+  @media (width < 800px) {
+    grid-template-areas:
+      "search profile"
+      "greeting greeting"
+      "actions actions";
+  }
+}
+
+.header__search {
+  grid-area: search;
 }
 
 .header__user-profile {
+  grid-area: profile;
   justify-self: end;
 }
 
+.header__greeting {
+  grid-area: greeting;
+}
+
 .header__actions {
+  grid-area: actions;
   justify-self: end;
+  @media (width < 800px) {
+    justify-self: start;
+  }
 }
 
 .search {

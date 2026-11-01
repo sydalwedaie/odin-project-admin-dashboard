@@ -31,6 +31,11 @@ html {
   --spacing-6: 13rem;
 
   --box-shadow: 3px 3px 5px 2px var(--color-shadow);
+
+  @media (width < 900px) {
+    --spacing-2: 1rem;
+    --spacing-3: 2rem;
+  }
 }
 
 body {
@@ -72,6 +77,9 @@ body {
   font-weight: bold;
   color: var(--color-fg-primary);
   font-size: 2rem;
+  @media (width < 600px) {
+    font-size: 1.5rem;
+  }
 }
 
 .text--inverted {
