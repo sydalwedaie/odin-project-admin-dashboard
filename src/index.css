@@ -38,7 +38,7 @@ body {
   /* max-height: 100dvh; */
 }
 
-/* typography */
+/* typography blocks */
 .heading {
   font-weight: bold;
   color: var(--color-fg-primary);
@@ -69,8 +69,16 @@ body {
   color: var(--color-fg-primary);
 }
 
-/* Blocks */
+.text--pop {
+  font-weight: bold;
+  color: var(--color-fg-primary);
+  font-size: 2rem;
+}
 
+.text--inverted {
+  color: var(--color-fg-inverted);
+  font-weight: bold;
+}
 
 /* card block used for announcements, trending and project-cards */
 .card {
