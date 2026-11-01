@@ -14,18 +14,20 @@ export function Trending() {
   const getItemMarkup = ({ handle, title }) => {
     const avatar = avatarContext(`./${handle}.png`);
     return html`
-      <div class="trending__item">
-        <div class="trending__user-avatar-wrapper">
+      <div class="trending__item id-label">
+        <div class="trending__user-avatar-wrapper id-label__img">
           <img
             class="trending__user-avatar"
             src="${avatar}"
             alt="avatar for ${handle}"
           />
         </div>
-        <strong class="trending__user-handle text text--strong"
+        <strong class="trending__user-handle id-label__line-1 text text--strong"
           >@${handle}</strong
         >
-        <div class="trending__title text text--primary">${title}</div>
+        <div class="trending__title id-label__line-2 text text--primary">
+          ${title}
+        </div>
       </div>
     `;
   };

@@ -85,3 +85,33 @@ body {
 .card--accent {
   border-left: 0.5rem solid var(--color-accent);
 }
+
+/* id-label used for individual trending items, and the user greeting */
+.id-label {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-template-areas: "img line-1" "img line-2";
+  column-gap: var(--spacing-1);
+}
+
+.id-label__img {
+  grid-area: img;
+  align-self: center;
+}
+
+.id-label__line-1 {
+  grid-area: line-1;
+  align-self: end;
+}
+
+.id-label__line-2 {
+  grid-area: line-2;
+}
+
+/* button used for header actions */
+.button {
+  border: none;
+  padding: calc(var(--spacing-0) * 2) var(--spacing-2);
+  background-color: var(--color-primary);
+  border-radius: 99rem;
+}
