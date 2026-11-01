@@ -3,6 +3,10 @@
   gap: var(--spacing-1);
 }
 
+.announcements__body {
+  padding: var(--spacing-1);
+}
+
 .announcements__item {
   padding: var(--spacing-1);
   display: grid;

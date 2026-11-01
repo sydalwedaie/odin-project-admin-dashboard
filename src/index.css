@@ -29,6 +29,8 @@ html {
   --spacing-4: 5rem;
   --spacing-5: 8rem;
   --spacing-6: 13rem;
+
+  --box-shadow: 3px 3px 5px 2px var(--color-shadow);
 }
 
 body {
@@ -69,17 +71,15 @@ body {
 
 /* Blocks */
 
+
+/* card block used for announcements, trending and project-cards */
 .card {
   background-color: var(--color-bg-primary);
   padding: var(--spacing-2);
   display: grid;
   gap: var(--spacing-1);
-  box-shadow: 3px 3px 5px 2px var(--color-shadow);
+  box-shadow: var(--box-shadow);
   border-radius: 0.5rem;
-
-  @container (width < 320px) {
-    padding: var(--spacing-1);
-  }
 }
 
 .card--accent {
