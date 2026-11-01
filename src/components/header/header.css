@@ -51,7 +51,7 @@
 
 .search__icon {
   width: 2rem;
-  filter: invert(0.3);
+  filter: var(--color-svg);
 }
 
 .search__input {
@@ -81,7 +81,7 @@
 
 .user-profile__bell-icon {
   width: 2rem;
-  filter: invert(0.3);
+  filter: var(--color-svg);
 }
 
 .actions {

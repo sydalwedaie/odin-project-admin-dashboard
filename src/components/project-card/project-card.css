@@ -9,5 +9,5 @@
 
 .project-card__action-icon {
   width: 1.5rem;
-  filter: invert(0.3);
+  filter: var(--color-svg);
 }

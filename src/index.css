@@ -2,26 +2,68 @@
 @import "./assets/reset.css";
 
 :root:not(.dark) {
-  --blue: #1992d4;
   --white: ghostwhite;
-  --yellow: #e4b549;
   --light-grey: #e3e7f0;
   --dim-grey: #bcbcbc;
   --dark-grey: #666666;
-  --white: #ffffff;
   --black: #2b2c2e;
-}
 
-html {
-  --color-primary: var(--blue);
-  --color-accent: var(--yellow);
   --color-bg-primary: var(--white);
   --color-bg-alternate: var(--light-grey);
   --color-fg-primary: var(--black);
   --color-fg-alternate: var(--dark-grey);
   --color-fg-inverted: var(--white);
   --color-shadow: var(--dim-grey);
+  --color-svg: invert(0.3);
+}
 
+:root.dark {
+  --white: ghostwhite;
+  --offwhite: #d1d1d1;
+  --light-grey: #aba9a9;
+  --dim-grey: #2c2c2c;
+  --dark-grey: #212121;
+  --black: #1d1d1d;
+
+  --color-bg-primary: var(--dim-grey);
+  --color-bg-alternate: var(--dark-grey);
+  --color-fg-primary: var(--offwhite);
+  --color-fg-alternate: var(--light-grey);
+  --color-fg-inverted: var(--white);
+  --color-shadow: var(--black);
+  --color-svg: invert(0.7);
+}
+
+:root.theme--color--blue:not(.dark) {
+  --color-primary: #1992d4;
+  --color-accent: #e4b549;
+}
+
+:root.theme--color--blue.dark {
+  --color-primary: #05669b;
+  --color-accent: #ce9f35;
+}
+
+:root.theme--color--green:not(.dark) {
+  --color-primary: #009688;
+  --color-accent: #8bc34a;
+}
+
+:root.theme--color--green.dark {
+  --color-primary: #0b6961;
+  --color-accent: #618f2a;
+}
+
+:root.theme--color--purple:not(.dark) {
+  --color-primary: #963ca2;
+  --color-accent: #c863c4;
+}
+
+:root.theme--color--purple.dark {
+  --color-primary: #523561;
+  --color-accent: #8a5184;
+}
+html {
   --spacing-0: 0.375rem;
   --spacing-1: 1rem;
   --spacing-2: 2rem;
@@ -98,7 +140,9 @@ body {
 }
 
 .card--accent {
-  border-left: 0.5rem solid var(--color-accent);
+  border-left-width: 0.5rem;
+  border-left-style: solid;
+  border-left-color: var(--color-accent);
 }
 
 /* id-label used for individual trending items, and the user greeting */
@@ -151,4 +195,23 @@ body {
   padding: var(--spacing-0);
   border-radius: 0.5rem;
   background-color: transparent;
+}
+
+.button--clear {
+  padding: var(--spacing-1);
+  border: 1px solid var(--color-fg-inverted);
+  background-color: transparent;
+  border-radius: 99rem;
+  color: var(--color-fg-inverted);
+}
+
+.button--round {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid var(--color-fg-inverted);
+
+  &:hover {
+    background-color: var(--color-fg-inverted);
+  }
 }
