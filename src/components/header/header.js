@@ -58,13 +58,13 @@ function createUserProfile(name, avatar) {
   const html = String.raw;
   return html`
     <div class="user-profile">
-      <div class="user-profile__bell">
+      <button class="user-profile__bell button button--outline">
         <img
           src="${bellIcon}"
           alt="bell icon"
-          class="user-profile__bell-icon"
+          class="user-profile__bell-icon button__icon"
         />
-      </div>
+      </button>
       <div class="user-profile__avatar-wrapper">
         <img src="${avatar}" alt="user avatar" class="user-profile__avatar" />
       </div>
@@ -79,7 +79,7 @@ function createActions() {
 
   const getButtonMarkup = (item) => {
     return html`
-      <button class="actions__item button">
+      <button class="actions__item button button--filled">
         <span class="button__text text text--inverted">${item}</span>
       </button>
     `;

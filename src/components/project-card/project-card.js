@@ -15,21 +15,21 @@ export function ProjectCard({ title, description }) {
         </article>
       </div>
       <aside class="project-card__actions">
-        <button class="project-card__action-btn">
+        <button class="project-card__action-btn button button--outline">
           <img
-            class="project-card__action-icon"
+            class="project-card__action-icon button__icon"
             src="${starIcon}"
             alt="star icon"
           /></button
-        ><button class="project-card__action-btn">
+        ><button class="project-card__action-btn button button--outline">
           <img
-            class="project-card__action-icon"
+            class="project-card__action-icon button__icon"
             src="${watchIcon}"
             alt="watch icon"
           /></button
-        ><button class="project-card__action-btn">
+        ><button class="project-card__action-btn button button--outline">
           <img
-            class="project-card__action-icon"
+            class="project-card__action-icon button__icon"
             src="${shareIcon}"
             alt="share icon"
           />

@@ -123,10 +123,32 @@ body {
   grid-area: line-2;
 }
 
-/* button used for header actions */
+/* button used for header actions, bell, card actions */
 .button {
   border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  &:hover {
+    background-color: var(--color-accent);
+  }
+
+  &:hover .button__icon {
+    filter: invert(1);
+  }
+
+  &:active {
+    filter: brightness(0.9);
+  }
+}
+
+.button--filled {
   padding: calc(var(--spacing-0) * 2) var(--spacing-2);
   background-color: var(--color-primary);
   border-radius: 99rem;
+}
+
+.button--outline {
+  padding: var(--spacing-0);
+  border-radius: 0.5rem;
+  background-color: transparent;
 }
