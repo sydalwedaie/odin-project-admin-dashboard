@@ -1,0 +1,22 @@
+.theme-control__toggle-mode {
+  width: 100%;
+}
+
+.theme-control__toggle-color {
+  display: flex;
+  justify-content: center;
+  padding-block: var(--spacing-1);
+  gap: var(--spacing-0);
+}
+
+.theme-control__toggle-blue {
+  background-color: #1992d4;
+}
+
+.theme-control__toggle-green {
+  background-color: #009688;
+}
+
+.theme-control__toggle-purple {
+  background-color: #963ca2;
+}
