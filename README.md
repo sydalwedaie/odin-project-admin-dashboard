@@ -1,17 +1,35 @@
+<div align="center">
+
 ![screenshot](./docs/screenshot.png)
 
 # The Odin Project - Admin Dashboard
 
-This is a solution to the [Project: Admin Dashboard](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)'s challenge from The Odin Project. The goal is to replicate the provided mockup in vanilla HTML/CSS, with a particular focus on the use of CSS Grid. As a self-imposed challenge, I used the [BEM Methodology](https://bem.info/en/methodology/) to name the classes and structure the files in a reusable component-based architecture. I also implemented a simple theme control with dark/light options and different colors.
+![html5 badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![css 3 badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![javascript badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![bem badge](https://img.shields.io/badge/Architecture-BEM-yellow?style=for-the-badge)
+![webpack badge](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white)
+![netlify badge](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
-## Links
+A solution to the [Project: Admin Dashboard](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)'s challenge from The Odin Project.
 
-- Source code on [GitHub](https://github.com/sydalwedaie/odin-project-admin-dashboard)
-- Live preview on [Netlify](https://odin-project-admin-dashboard-x9zka.netlify.app/#)
+[Source Code](https://github.com/sydalwedaie/odin-project-admin-dashboard) •
+[Live Preview](https://odin-project-admin-dashboard-x9zka.netlify.app/#)
+</div>
+
+## Project Description
+
+The goal is to replicate the provided mockup in vanilla HTML/CSS, with a particular focus on the use of CSS Grid. As a self-imposed challenge, I used the [BEM Methodology](https://bem.info/en/methodology/) to name the classes and structure the files in a reusable component-based architecture. I also implemented a simple theme control with dark/light options and different colors.
 
 ## Learning Outcomes
 
 Over the years, I have naturally developed my own style for organizing my JavaScript logic. I could not say the same for CSS. Using the [BEM Methodology](https://bem.info/en/methodology/) was a breath of fresh air. BEM is often referred to as a _CSS class naming convention_. In reality, it's a holistic methodology for organizing a project. Here are my takeaways on BEM, beyond the simple naming convention it is usually associated with.
+
+## BEM class naming convention
+
+I spent a while planning the naming conventions. I used Excalidraw to identify the components and apply names to each one. This was a conventions operation, as I edited the structure many times during the developement.
+
+![Class name planning](./docs/bem-architecture-s.png)
 
 ### Project Organization
 
